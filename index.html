@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>説明</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="header-logo">TestApp</div>
+        <nav class="header-nav">
+            <ul>
+                <a href="https://tomokirl.github.io/homec/">ホーム</a>
+                <a href="https://tomokirl.github.io/setting/">設定</a>
+                <a href="https://tomokirl.github.io/explanation/">説明</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- explanation -->
+    <explanation>
+        <div class="explanation">
+            <h1>説明</h1>
+            <h2>使い方</h2>
+            <p>ホーム:画面下部の「START」から、カメラアプリを起動できます</p>
+            <p>設定:名前や緊急時の通知の送り先を設定できます</p>
+            <p>カメラアプリ:パソコンのカメラに顔を映すことで感情を読み取ることができます</p>
+
+            <h2>カメラアプリの仕組み</h2>
+            <p>JavaScriptのライブラリである「face-api.js」を使用しています</p>
+            <p>ブラウザでの顔検出・顔認証のためのAPIであり、カメラで検出された顔に68個の特徴点を抽出することで分析を可能としています。</p>
+            <p>分析できるものとして、年齢・性別・感情を今回実装しましたが、事前に登録した人と比較し本人かの判定にも使われています。</p>
+
+            <h2>注意とお願い</h2>
+            <p>今回の制作にあたって、カメラでの読み取りは可能でしたが、パソコンで読み取りスマホに通知を送るという連携ができませんでした</p>
+            <p>また、サーバーを使用しておりませんので、設定の入力内容が反映できまでんでしたので形のみとなっています</p>
+
+            <h2>参考一覧</h2>
+            <p>https://github.com/justadudewhohacks/face-api.js/tree/master/weights</p>
+            <p>https://blog.capilano-fw.com/?p=4063</p>
+            <p>https://qiita.com/ymmt1089/items/4e35a7ba62d38c568cb6</p>
+            <p>https://qiita.com/A__Matsuda/items/f71a935612a55d6e674e</p>
+            <p></p>
+
+        </div>
+    </explanation>
+
+
+    <!-- footer  -->
+    <footer>
+        <p class="company-info">2班</p>
+    </footer>
+
+
+
+    <script src="./main.js"></script>
+
+</body>
+</html>

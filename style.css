@@ -1,0 +1,115 @@
+/*全体のスタイル（CSSリセット用）*/
+* {
+    /* padding,borderが要素の中に入る */
+    box-sizing: border-box;
+}
+
+ul {
+    /* リストの・を消す */
+    list-style: none;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    /* 文字の下の線を消す */
+    text-decoration: none;
+}
+
+body {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 共通のスタイル */
+.inner {
+    width: 1100px;
+    padding: 90px 0;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-b {
+    font-weight: bold;
+}
+
+
+/* header  */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-logo {
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    padding: 22px 0;
+}
+
+.header-nav ul a {
+    margin-left: 55px;
+    font-size: 18px;
+}
+
+/* footer  */
+
+footer {
+    background-color: black;
+    height: 80px;
+}
+
+.company-info {
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+/* explanation */
+
+.explanation {
+    padding: 170px 0;
+    height: 1000px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
